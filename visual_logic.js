@@ -732,7 +732,9 @@ function replaceTexture(matName, texName, texUrlOrElem, doCb) {
 
     }
 }
-
+window.replaceTextureEx = function (matName, texName, texUrlOrElem, doCb){
+    return replaceTexture(matName, texName, texUrlOrElem, doCb)
+}
 
 
 createCSSRule('.painting_palette', ('position: absolute;' + '\n' +
