@@ -1,0 +1,20 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="446" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="939" scrolly="696" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="replaceTexture" id="rm$:^b`BeUc$fV?0y-W@" x="-910" y="-630">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+      <field name="OLD_TEX_NAME">&lt;no textures&gt;</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id=".;enLN!fi:h@NejRRKVv">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+      <value name="NEW_TEX_URL">
+        <shadow type="text" id="svE~~pJPADO^?UdeL:$H">
+          <field name="TEXT">./newTexture.png</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1101" viewport-y="28" viewport-w="801" viewport-h="746" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

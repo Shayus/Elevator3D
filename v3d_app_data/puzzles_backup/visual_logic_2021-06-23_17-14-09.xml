@@ -1,0 +1,23 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="446.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="875" scrolly="446.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="bloom" id="_K]BHaO*mo:[p`Fm]FgG" x="-710" y="-330">
+      <value name="THRESHOLD">
+        <shadow type="number_slider" id="?GLp/I/z.(CFoGb-L3[e">
+          <field name="NUM" min="0" max="10" step="0.1">0.8</field>
+        </shadow>
+      </value>
+      <value name="STRENGTH">
+        <shadow type="number_slider" id="_8st~6s~Z79B3:oVH6tl">
+          <field name="NUM" min="0" max="10" step="0.1">0.3</field>
+        </shadow>
+      </value>
+      <value name="RADIUS">
+        <shadow type="number_slider" id="c|Bx}qd_c{jwfu#0NycV">
+          <field name="NUM" min="0" max="10" step="0.1">0.5</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="28" viewport-w="768" viewport-h="484.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
