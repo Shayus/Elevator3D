@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="2653.852429600229" scrolly="1179.25530586969" scale="0.9070294784580493">
+  <tab name="main" type="MainTab" active="true" scrollx="2943.087402343752" scrolly="56.74000167846657" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="bE@luFqe#dvLT2j7:jzX" type="">wood_icon</variable>
       <variable id="q`GZkkkusMs6b9I-T1Vp" type="">ground_icon</variable>
@@ -1322,6 +1322,39 @@
         </block>
       </statement>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setMaterialColor" id="yYYfa.8iW!{I$:@2YUiw" x="-2850" y="130">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
+      <field name="MAT_COL_NAME">RGB</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="@(;=${6a{^{YXEGKf*H$">
+          <field name="FIELDNAME">colorlight</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="yc`^+ah%B]FW+pSJA}!E" x="-2850" y="230">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="!z7H9*3.Gx7Sq[HU@5:u">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="show" id="2nn2mq}#G2u(eD*XhX$o" x="-2230" y="230">
+      <value name="VALUE">
+        <shadow type="objectList" id="f4t/H6L7+:;jmMqN6yn)">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="allObjectList" id="?U=gZ#;WrqjRbezDM|RQ" x="-2530" y="250"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="groupList" id="/v]qBc#5jIzjO]=n2X:7" x="-2390" y="250">
+      <field name="FIELDNAME">&lt;none&gt;</field>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="6*)yPO|J|geUa9jN0.;x" x="-1030" y="230">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
@@ -1465,6 +1498,49 @@
               </value>
             </block>
           </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="isObjectVisible" id="v:Vd(+fz}3c/Vrh|G1QG" x="-2170" y="290">
+      <value name="VALUE">
+        <shadow type="objectList" id="j5J-$Z{5_qerwSkr*~CB">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="pickedObject" id="|R%:oWOI;eiIQ]xO[SiM" x="-2850" y="330"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="FUCO=o{Jg|pBlDr.U#+o" x="-2850" y="390">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="-A1ZsqD##gaEm|$:FyTL">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="allObjectList" id="7oW/fs--T(3S4QaLpodX" x="-2390" y="390"/>
+    <block xmlns="https://developers.google.com/blockly/xml" type="cloneObject" id="/h%ZR9aEYR-g6!%IrkI:" x="-2150" y="390">
+      <value name="OBJECTINPUT">
+        <shadow type="objectList" id="p)0^vQ{7z}m6!Xf]A]~:">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadScene" id="pW.XD%K@JO4Hq0:NNI_M" x="-2850" y="550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" enablealias="false"></mutation>
+      <value name="URL">
+        <shadow type="text" id="_O^UD`^;b[!l5{I)!C#?">
+          <field name="TEXT">path/to/scene.gltf</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="appendScene" id="`SvVUCS*1Y]aHV,QkC!T">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+          <value name="URL">
+            <shadow type="text" id="7={Qv(hI-@{U4^-[;[G(">
+              <field name="TEXT">path/to/scene.gltf</field>
+            </shadow>
+          </value>
         </block>
       </next>
     </block>

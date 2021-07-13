@@ -1,0 +1,1497 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="875" scrolly="446.00000000000034" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="*UJKFK@,T--Pw1tbzQ^I" x="-750" y="-430">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="2970.087402343752" scrolly="365.74000167846657" scale="1">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="bE@luFqe#dvLT2j7:jzX" type="">wood_icon</variable>
+      <variable id="q`GZkkkusMs6b9I-T1Vp" type="">ground_icon</variable>
+      <variable id="]c0,#Xb=UMN9NJqoq2B^" type="">markers_visible</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="createCSSRule" id="C#1X]V1CL;kMkb^#,6P?" x="-2850" y="-1350">
+      <field name="PARENT">FALSE</field>
+      <value name="CSS_RULE">
+        <shadow type="text">
+          <field name="TEXT">.myClass</field>
+        </shadow>
+        <block type="text" id="bkBsXX[J0Ap:.OAR-v/p">
+          <field name="TEXT">.painting_palette</field>
+        </block>
+      </value>
+      <value name="CSS_RULE_CONT">
+        <shadow type="text" id="@)H5v;6J;h!q5U6A.rt@">
+          <field name="TEXT">color: red;</field>
+        </shadow>
+        <block type="textMultiline" id="`#C[mVznih0`zBeY~R:(">
+          <field name="HIGHLIGHT_MODE">css</field>
+          <field name="TEXT">position: absolute;&#10;display: none;&#10;background: white;&#10;border-radius: 25px;&#10;width: auto;&#10;height: auto;&#10;z-index: 2;&#10;padding: 2.5px;</field>
+        </block>
+      </value>
+      <next>
+        <block type="createCSSRule" id="wDpe~iNK(n82{WOwBwSj">
+          <field name="PARENT">FALSE</field>
+          <value name="CSS_RULE">
+            <shadow type="text" id="n0V5Ez^]js|Rp1ovdJ3/">
+              <field name="TEXT">.myClass</field>
+            </shadow>
+            <block type="text" id="3+!scM?HbQ=_wKCj/a1*">
+              <field name="TEXT">.interraction_icon</field>
+            </block>
+          </value>
+          <value name="CSS_RULE_CONT">
+            <shadow type="text" id="MWaTi;NXS=.Mf.lm5Xfp">
+              <field name="TEXT">color: red;</field>
+            </shadow>
+            <block type="textMultiline" id="+yOu|LxdIMo,c]9zL)YG">
+              <field name="HIGHLIGHT_MODE">css</field>
+              <field name="TEXT">position: absolute;&#10;background-size: 60%;&#10;background-color: white;&#10;background-position: center;&#10;background-repeat: no-repeat;&#10;border-radius: 25px;&#10;width: 40px;&#10;height: 40px;&#10;z-index: 2;&#10;cursor: pointer;</field>
+            </block>
+          </value>
+          <next>
+            <block type="createCSSRule" id="`T?8^unp/.`_[y)VePQ)">
+              <field name="PARENT">FALSE</field>
+              <value name="CSS_RULE">
+                <shadow type="text">
+                  <field name="TEXT">.myClass</field>
+                </shadow>
+                <block type="text" id="2k(GJ#s+Uc]`Ps~xIS`D">
+                  <field name="TEXT">.colors</field>
+                </block>
+              </value>
+              <value name="CSS_RULE_CONT">
+                <shadow type="text" id="3CqD2,Bml]7tCw~)pP86">
+                  <field name="TEXT">color: red;</field>
+                </shadow>
+                <block type="textMultiline" id="M,9oo]R~qw8X38IV=EQ?">
+                  <field name="HIGHLIGHT_MODE">css</field>
+                  <field name="TEXT">position: static;&#10;border-radius: 25px;&#10;width: 30px;&#10;height: 30px;&#10;cursor: pointer;&#10;margin: 2.5px;&#10;float: left;</field>
+                </block>
+              </value>
+              <next>
+                <block type="createCSSRule" id="l7VH@v)a^atmEZbmIbd2">
+                  <field name="PARENT">FALSE</field>
+                  <value name="CSS_RULE">
+                    <shadow type="text">
+                      <field name="TEXT">.myClass</field>
+                    </shadow>
+                    <block type="text" id="cJ(qu8om/{M*/X]7+nUi">
+                      <field name="TEXT">.markers_hide_show</field>
+                    </block>
+                  </value>
+                  <value name="CSS_RULE_CONT">
+                    <shadow type="text" id="u.Xqha*5*)7zU|or}YyN">
+                      <field name="TEXT">color: red;</field>
+                    </shadow>
+                    <block type="textMultiline" id=".?^~Gu)w|A{7Tk1h:[o@">
+                      <field name="HIGHLIGHT_MODE">css</field>
+                      <field name="TEXT">position: absolute;&#10;top: 5px;&#10;right: 60px;&#10;width: 50px;&#10;height: 50px;&#10;cursor: pointer;&#10;background-size: 100% 100%;&#10;z-index: 3;</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="yhCwn+^e|cHMdYVXQb*8" x="-1050" y="-830">
+      <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="jBISX#Ahd31ikb77tuJ+">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+      <next>
+        <block type="addHTMLElement" id="TroB,]h.)go:CxQ+MiCM">
+          <field name="ELEMENT">div</field>
+          <field name="MODE">TO</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="w?jhiQdV{5j{`.$V92ft">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="K)3~^^rl0eW@OOV5Z67L">
+              <field name="TEXT">material_icon</field>
+            </block>
+          </value>
+          <value name="TARGET_ID">
+            <shadow type="DOMObjectSelector" id="`@l;6}JKg0W3la/{N~`O">
+              <field name="DOM_OBJECT">CONTAINER</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="gqWv?YjoOhkU@^#U-H:v">
+              <field name="ATTRIBUTE">className</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="d)hq+s6JW}?p;ddyoG9^">
+                  <field name="TEXT">interraction_icon</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id=";@_xP@G::x+png4ToSBu">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="):~.`!4x3XGcu8Q1V:oF">
+                  <field name="TEXT">material_icon</field>
+                </block>
+              </value>
+              <next>
+                <block type="bindHTMLObject" id="v}MXnYU-ZWU!/o?Vv-lU">
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="[3SZ-P|n+%!28LwB%~?5">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="[t#3ScEU#5y2|-?t=.}c">
+                      <field name="TEXT">material_icon</field>
+                    </block>
+                  </value>
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList" id="gLTxMS?2V?rDsd^$x{+W">
+                      <field name="FIELDNAME">wood_icon</field>
+                    </shadow>
+                    <block type="objectList" id="ymvCI;qedYXJv2QHYHGG">
+                      <field name="FIELDNAME">wood_icon</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="tWv%qHLdcIdx:*vbx/Cg">
+                      <field name="PROPERTY">left</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="#=,c[^8D`1f)9Ol8}aY1">
+                          <field name="TEXT">-20px</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="k!(.x7:LtF%yBH%l`qb9">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="text" id="7L=Uv_:!u{nW4PCK+Qvo">
+                          <field name="TEXT">material_icon</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="F}4wz#/IrtXb|?,.tm1!">
+                          <field name="PROPERTY">top</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="c80L`k9*`4cI2(8.=mod">
+                              <field name="TEXT">-20px</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="text" id="YHxcMwHL|$]vi/u}1iMw">
+                              <field name="TEXT">material_icon</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="H?*,;_$}v9`nj{6=[zb8">
+                              <field name="PROPERTY">backgroundImage</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="/xG|rgiv,1ePItAE%vKN">
+                                  <field name="TEXT">url(icons/paint-brush-solid.svg)</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT"/>
+                                </shadow>
+                                <block type="text" id="vryl1uCRp*`V*mnL9[iR">
+                                  <field name="TEXT">material_icon</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="addHTMLElement" id="wCF0YObs|tw_Q(o~hAy0">
+                                  <field name="ELEMENT">div</field>
+                                  <field name="MODE">TO</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="ID">
+                                    <shadow type="text">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                    <block type="text" id="8J[z#,48!}2[XF]TGm?N">
+                                      <field name="TEXT">material_palette</field>
+                                    </block>
+                                  </value>
+                                  <value name="TARGET_ID">
+                                    <shadow type="DOMObjectSelector" id="$p#k.|//#goCWHavcrPI">
+                                      <field name="DOM_OBJECT">CONTAINER</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemAttribute" id="@QX]qYTV`I%_WFc8}rvI">
+                                      <field name="ATTRIBUTE">className</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id=";Y#Jh{IW:emd9@;Y2|H:">
+                                          <field name="TEXT">painting_palette</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                        <block type="text" id=",t~~1Sx1$/{S)0`,g;^]">
+                                          <field name="TEXT">material_palette</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="bindHTMLObject" id="/OAqR|r7S|?Q=4OBDN2I">
+                                          <field name="PARENT">FALSE</field>
+                                          <value name="ID">
+                                            <shadow type="text">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                            <block type="text" id="#XnNH!fn`6RX[*ZB$1QC">
+                                              <field name="TEXT">material_palette</field>
+                                            </block>
+                                          </value>
+                                          <value name="OBJECTINPUT">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">wood_icon</field>
+                                            </shadow>
+                                            <block type="objectList" id="7v)P72b+lmxFB0{qXou@">
+                                              <field name="FIELDNAME">wood_icon</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="setHTMLElemStyle" id=")@fm]6F;0hA]CI3~B;[d">
+                                              <field name="PROPERTY">left</field>
+                                              <field name="PARENT">FALSE</field>
+                                              <value name="VALUE">
+                                                <block type="text" id="QUY_./8o$If^#p%i%y71">
+                                                  <field name="TEXT">30px</field>
+                                                </block>
+                                              </value>
+                                              <value name="ID">
+                                                <shadow type="text">
+                                                  <field name="TEXT"/>
+                                                </shadow>
+                                                <block type="text" id="Vf)YaRIJ72LhFA(:0|0@">
+                                                  <field name="TEXT">material_palette</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="setHTMLElemStyle" id="x4a,*Gra%19-Y?9J.XV8">
+                                                  <field name="PROPERTY">top</field>
+                                                  <field name="PARENT">FALSE</field>
+                                                  <value name="VALUE">
+                                                    <block type="text" id="G#2y+DYsfC6wth5.2Cf(">
+                                                      <field name="TEXT">-20px</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ID">
+                                                    <shadow type="text">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                    <block type="text" id="$`);$j`D$O)cD+z[9H]x">
+                                                      <field name="TEXT">material_palette</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="eventHTMLElem" id="-7UUf~Z$G$b]3N$=V5-%">
+                                                      <field name="EVENT">click</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="zD[WDNQ:ul9u{VqXk0qY">
+                                                          <field name="TEXT">material_icon</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <statement name="DO">
+                                                        <block type="controls_if" id="3?[?r5h;0|,BSv=1ZQfz">
+                                                          <mutation else="1"/>
+                                                          <value name="IF0">
+                                                            <block type="logic_compare" id="^.|)eZScJ;jQrxi$w$Fz">
+                                                              <field name="OP">EQ</field>
+                                                              <value name="A">
+                                                                <block type="variables_get" id="~Rh!9iZYq499Ei;[5V|[">
+                                                                  <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="B">
+                                                                <block type="logic_boolean" id="TSTUMAT.ttpO]rP3CE7]">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <statement name="DO0">
+                                                            <block type="setHTMLElemStyle" id="5W3AazksNgXnnVlY2Xb1">
+                                                              <field name="PROPERTY">display</field>
+                                                              <field name="PARENT">FALSE</field>
+                                                              <value name="VALUE">
+                                                                <block type="text" id="dK!Db5kl3jM7-:+E8P}2">
+                                                                  <field name="TEXT">block</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ID">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT"/>
+                                                                </shadow>
+                                                                <block type="text" id="dOpPfs$a4(b5afXBD7:o">
+                                                                  <field name="TEXT">material_palette</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="variables_set" id="UB^.8],kf-eeTc3Wl-!K">
+                                                                  <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="logic_boolean" id="o@8H^%,lftj^]PiUUVr$">
+                                                                      <field name="BOOL">TRUE</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </statement>
+                                                          <statement name="ELSE">
+                                                            <block type="variables_set" id="xc?RXyPq$I:qanHDK^m#">
+                                                              <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="AXgLyk}rGn/M=k04?y%f">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setHTMLElemStyle" id="8k6?/6LZCbV5.cYJb:xD">
+                                                                  <field name="PROPERTY">display</field>
+                                                                  <field name="PARENT">FALSE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="r]dn1L=G/]Sd.(]eRfHQ">
+                                                                      <field name="TEXT">none</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text">
+                                                                      <field name="TEXT"/>
+                                                                    </shadow>
+                                                                    <block type="text" id="N2#sUdk2~R4gpWc8n7/1">
+                                                                      <field name="TEXT">material_palette</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </statement>
+                                                        </block>
+                                                      </statement>
+                                                      <next>
+                                                        <block type="addHTMLElement" id="W;AcBkP[GfFv}9qs@X0^">
+                                                          <field name="ELEMENT">div</field>
+                                                          <field name="MODE">TO</field>
+                                                          <field name="PARENT">FALSE</field>
+                                                          <value name="ID">
+                                                            <shadow type="text">
+                                                              <field name="TEXT"/>
+                                                            </shadow>
+                                                            <block type="text" id="P5?[Gk6a3dWP$q4kUU)H">
+                                                              <field name="TEXT">wood_mat_1</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="TARGET_ID">
+                                                            <shadow type="DOMObjectSelector" id="gq6,X};G{XYYeBOC`n8^">
+                                                              <field name="DOM_OBJECT">CONTAINER</field>
+                                                            </shadow>
+                                                            <block type="text" id="p]AwR,Y8|E.JJCK}=h%0">
+                                                              <field name="TEXT">material_palette</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="setHTMLElemAttribute" id="tTTKXN4vAI8AmdY?a:gz">
+                                                              <field name="ATTRIBUTE">className</field>
+                                                              <field name="PARENT">FALSE</field>
+                                                              <value name="VALUE">
+                                                                <block type="text" id="hN~2NTS/;_9se0DR=Rwk">
+                                                                  <field name="TEXT">colors</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ID">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT"/>
+                                                                </shadow>
+                                                                <block type="text" id="p$9yero_.9u0.KfDiPXP">
+                                                                  <field name="TEXT">wood_mat_1</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setHTMLElemStyle" id="nw(YeITDcM2Ry-3^inAX">
+                                                                  <field name="PROPERTY">backgroundImage</field>
+                                                                  <field name="PARENT">FALSE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="GrEN`SQiS*-[58oS}[o0">
+                                                                      <field name="TEXT">url('wood_basecolor_1.jpg')</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text">
+                                                                      <field name="TEXT"/>
+                                                                    </shadow>
+                                                                    <block type="text" id="L/vJK.bu5fR3OL,)$[K|">
+                                                                      <field name="TEXT">wood_mat_1</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="addHTMLElement" id="VN$dJ*M!NW[Y6?p?;zn*">
+                                                                      <field name="ELEMENT">div</field>
+                                                                      <field name="MODE">TO</field>
+                                                                      <field name="PARENT">FALSE</field>
+                                                                      <value name="ID">
+                                                                        <shadow type="text">
+                                                                          <field name="TEXT"/>
+                                                                        </shadow>
+                                                                        <block type="text" id="Ji.BPEG:g!?l%q}1C{nQ">
+                                                                          <field name="TEXT">wood_mat_2</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="TARGET_ID">
+                                                                        <shadow type="DOMObjectSelector">
+                                                                          <field name="DOM_OBJECT">CONTAINER</field>
+                                                                        </shadow>
+                                                                        <block type="text" id=",5S0`rBWPGu!M/T=Rprd">
+                                                                          <field name="TEXT">material_palette</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <next>
+                                                                        <block type="setHTMLElemAttribute" id="N6Zlv;H:BzFsI=K)ep)q">
+                                                                          <field name="ATTRIBUTE">className</field>
+                                                                          <field name="PARENT">FALSE</field>
+                                                                          <value name="VALUE">
+                                                                            <block type="text" id="/StrTFEOMWTR,AdAlYG+">
+                                                                              <field name="TEXT">colors</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <value name="ID">
+                                                                            <shadow type="text" id="L+AJ9?ygAKbSr#Z`kjL-">
+                                                                              <field name="TEXT"/>
+                                                                            </shadow>
+                                                                            <block type="text" id="~9YNy5|$NJQBmM7AJR/)">
+                                                                              <field name="TEXT">wood_mat_2</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <next>
+                                                                            <block type="setHTMLElemStyle" id="/5i;);r=V_CO/{_7}AZo">
+                                                                              <field name="PROPERTY">backgroundImage</field>
+                                                                              <field name="PARENT">FALSE</field>
+                                                                              <value name="VALUE">
+                                                                                <block type="text" id="{/QRgpp?;Ih2?`OzbLou">
+                                                                                  <field name="TEXT">url('box.floor2.jpg')</field>
+                                                                                </block>
+                                                                              </value>
+                                                                              <value name="ID">
+                                                                                <shadow type="text">
+                                                                                  <field name="TEXT"/>
+                                                                                </shadow>
+                                                                                <block type="text" id="ZsY/E1{Ul4f1S$LR?YaP">
+                                                                                  <field name="TEXT">wood_mat_2</field>
+                                                                                </block>
+                                                                              </value>
+                                                                              <next>
+                                                                                <block type="addHTMLElement" id="Nhedw@UN680rAUS=d+iA">
+                                                                                  <field name="ELEMENT">div</field>
+                                                                                  <field name="MODE">TO</field>
+                                                                                  <field name="PARENT">FALSE</field>
+                                                                                  <value name="ID">
+                                                                                    <shadow type="text" id="ob:n6#B[h#sXVx0fF?cf">
+                                                                                      <field name="TEXT"/>
+                                                                                    </shadow>
+                                                                                    <block type="text" id="0u-#tuj,8xg;%Xw[?85S">
+                                                                                      <field name="TEXT">wood_mat_3</field>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                  <value name="TARGET_ID">
+                                                                                    <shadow type="DOMObjectSelector">
+                                                                                      <field name="DOM_OBJECT">CONTAINER</field>
+                                                                                    </shadow>
+                                                                                    <block type="text" id="W24y@bR$5={Kx]/G(#{M">
+                                                                                      <field name="TEXT">material_palette</field>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                  <next>
+                                                                                    <block type="setHTMLElemAttribute" id="xn}zQx?bJoP^DC|-~5ww">
+                                                                                      <field name="ATTRIBUTE">className</field>
+                                                                                      <field name="PARENT">FALSE</field>
+                                                                                      <value name="VALUE">
+                                                                                        <block type="text" id="nYBSghLFMtqp0m*tEza[">
+                                                                                          <field name="TEXT">colors</field>
+                                                                                        </block>
+                                                                                      </value>
+                                                                                      <value name="ID">
+                                                                                        <shadow type="text">
+                                                                                          <field name="TEXT"/>
+                                                                                        </shadow>
+                                                                                        <block type="text" id="{OOqlM!6FIk_z7}YST^]">
+                                                                                          <field name="TEXT">wood_mat_3</field>
+                                                                                        </block>
+                                                                                      </value>
+                                                                                      <next>
+                                                                                        <block type="setHTMLElemStyle" id="WQ/oUBm^i;gg)Z+k8s*:">
+                                                                                          <field name="PROPERTY">backgroundImage</field>
+                                                                                          <field name="PARENT">FALSE</field>
+                                                                                          <value name="VALUE">
+                                                                                            <block type="text" id="n`ei;=vo8+gDtqbs;rL,">
+                                                                                              <field name="TEXT">url('box.floor3.jpg')</field>
+                                                                                            </block>
+                                                                                          </value>
+                                                                                          <value name="ID">
+                                                                                            <shadow type="text">
+                                                                                              <field name="TEXT"/>
+                                                                                            </shadow>
+                                                                                            <block type="text" id="Yruy1-+)2Ahg5p*IeczB">
+                                                                                              <field name="TEXT">wood_mat_3</field>
+                                                                                            </block>
+                                                                                          </value>
+                                                                                        </block>
+                                                                                      </next>
+                                                                                    </block>
+                                                                                  </next>
+                                                                                </block>
+                                                                              </next>
+                                                                            </block>
+                                                                          </next>
+                                                                        </block>
+                                                                      </next>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="3J/4l{lYNsLJY_-C]Egj" x="30" y="-839">
+      <field name="VAR" id="q`GZkkkusMs6b9I-T1Vp">ground_icon</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id=".,0XTC:p6-2lLf1BWMn/">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+      <next>
+        <block type="addHTMLElement" id="Y:G%*EL]88F*kH=4`si{">
+          <field name="ELEMENT">div</field>
+          <field name="MODE">TO</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="g]C+kliD?#IdjTkkj29.">
+              <field name="TEXT">ground_icon</field>
+            </block>
+          </value>
+          <value name="TARGET_ID">
+            <shadow type="DOMObjectSelector" id="(CwbI4U.k4[1pEt*%SdK">
+              <field name="DOM_OBJECT">CONTAINER</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="6E![fsbU?^W1@~=$d]-R">
+              <field name="ATTRIBUTE">className</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="X?/CyMI5l*jRN*u`yZF%">
+                  <field name="TEXT">interraction_icon</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="J3WJsZ~.yC*mGr9~M?@C">
+                  <field name="TEXT">ground_icon</field>
+                </block>
+              </value>
+              <next>
+                <block type="bindHTMLObject" id=":8#$z7O@Oft$W2M|Bj5W">
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="eLb]=t/nDc.:)/u#NqvV">
+                      <field name="TEXT">ground_icon</field>
+                    </block>
+                  </value>
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList">
+                      <field name="FIELDNAME">wood_icon</field>
+                    </shadow>
+                    <block type="objectList" id="j4pF#-gBJH0}_`G!Q8Al">
+                      <field name="FIELDNAME">floor_icon</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="_?+/a(cwXCF8(|qzeq3u">
+                      <field name="PROPERTY">left</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="y|uNXdP5Q)NOWq!;`a|V">
+                          <field name="TEXT">-20px</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="text" id="[%bw_FyfE/PvZ5_t4E,k">
+                          <field name="TEXT">ground_icon</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="C!ZKO,F%]gVj0x01Eb].">
+                          <field name="PROPERTY">top</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="IE#eF)pCeVJ]65,.n/PR">
+                              <field name="TEXT">-20px</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="text" id="7O3X6rb%){xh+352;=|w">
+                              <field name="TEXT">ground_icon</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="/kx,t$%Q/46^IL%#+Dk4">
+                              <field name="PROPERTY">backgroundImage</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="o?*?_#jDbl^3:-pW[/Tq">
+                                  <field name="TEXT">url(icons/paint-brush-solid.svg)</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text">
+                                  <field name="TEXT"/>
+                                </shadow>
+                                <block type="text" id="_8MC/G6B#b4pEgyI6KLF">
+                                  <field name="TEXT">ground_icon</field>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="addHTMLElement" id="dEg}+(AE@v5Orac$@uM5">
+                                  <field name="ELEMENT">div</field>
+                                  <field name="MODE">TO</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="ID">
+                                    <shadow type="text">
+                                      <field name="TEXT"/>
+                                    </shadow>
+                                    <block type="text" id="M}R2~F`+p`WS)QO2JwR8">
+                                      <field name="TEXT">ground_palette</field>
+                                    </block>
+                                  </value>
+                                  <value name="TARGET_ID">
+                                    <shadow type="DOMObjectSelector" id="-zO~f[Kfa^ew*gE+zC-f">
+                                      <field name="DOM_OBJECT">CONTAINER</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setHTMLElemAttribute" id="VAl24WQ-,zMx(1BmRK4!">
+                                      <field name="ATTRIBUTE">className</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="6g~EpD8H_N~aoQo~UwKk">
+                                          <field name="TEXT">painting_palette</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text">
+                                          <field name="TEXT"/>
+                                        </shadow>
+                                        <block type="text" id="eWJAj-36,RZI%2)yRrL[">
+                                          <field name="TEXT">ground_palette</field>
+                                        </block>
+                                      </value>
+                                      <next>
+                                        <block type="bindHTMLObject" id="iTeVadoJE#Q..o(:i~(o">
+                                          <field name="PARENT">FALSE</field>
+                                          <value name="ID">
+                                            <shadow type="text">
+                                              <field name="TEXT"/>
+                                            </shadow>
+                                            <block type="text" id="|3JQXI7={k]5%G:KC(fN">
+                                              <field name="TEXT">ground_palette</field>
+                                            </block>
+                                          </value>
+                                          <value name="OBJECTINPUT">
+                                            <shadow type="objectList">
+                                              <field name="FIELDNAME">wood_icon</field>
+                                            </shadow>
+                                            <block type="objectList" id="0..M56H|5)E}NF:2vgHx">
+                                              <field name="FIELDNAME">floor_icon</field>
+                                            </block>
+                                          </value>
+                                          <next>
+                                            <block type="setHTMLElemStyle" id="Q^8+%S*)eNrLN~FSk1}B">
+                                              <field name="PROPERTY">left</field>
+                                              <field name="PARENT">FALSE</field>
+                                              <value name="VALUE">
+                                                <block type="text" id="N|3+7yZw@4Mif~:)b!z=">
+                                                  <field name="TEXT">30px</field>
+                                                </block>
+                                              </value>
+                                              <value name="ID">
+                                                <shadow type="text">
+                                                  <field name="TEXT"/>
+                                                </shadow>
+                                                <block type="text" id="h!B0gVus{FO%csn]4xti">
+                                                  <field name="TEXT">ground_palette</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="setHTMLElemStyle" id=",$[fZgfjWzEohQThi8QD">
+                                                  <field name="PROPERTY">top</field>
+                                                  <field name="PARENT">FALSE</field>
+                                                  <value name="VALUE">
+                                                    <block type="text" id="SWZYlN:b+gY$u4dJYRgM">
+                                                      <field name="TEXT">-20px</field>
+                                                    </block>
+                                                  </value>
+                                                  <value name="ID">
+                                                    <shadow type="text">
+                                                      <field name="TEXT"/>
+                                                    </shadow>
+                                                    <block type="text" id="=D|)#HhKAf~z6INFMZkb">
+                                                      <field name="TEXT">ground_palette</field>
+                                                    </block>
+                                                  </value>
+                                                  <next>
+                                                    <block type="eventHTMLElem" id="9TdJ8/^5cpBZet:JOMhF">
+                                                      <field name="EVENT">click</field>
+                                                      <field name="PARENT">FALSE</field>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="kZ9csm?U@M?V0ET~C%o|">
+                                                          <field name="TEXT">ground_icon</field>
+                                                        </shadow>
+                                                      </value>
+                                                      <statement name="DO">
+                                                        <block type="controls_if" id="9)Q/Jy]ViYGl)fH4o.Ok">
+                                                          <mutation else="1"/>
+                                                          <value name="IF0">
+                                                            <block type="logic_compare" id="NsTs.=SpaFyq$IT4MDNM">
+                                                              <field name="OP">EQ</field>
+                                                              <value name="A">
+                                                                <block type="variables_get" id="u_WcnpaK,l#N*}Uyv2E3">
+                                                                  <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="B">
+                                                                <block type="logic_boolean" id="[5RLZ/tY[8q8o!hhnRLO">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                            </block>
+                                                          </value>
+                                                          <statement name="DO0">
+                                                            <block type="setHTMLElemStyle" id="yhff?@Jf@|//TB{;i#:L">
+                                                              <field name="PROPERTY">display</field>
+                                                              <field name="PARENT">FALSE</field>
+                                                              <value name="VALUE">
+                                                                <block type="text" id="P2+A;e:R:u{AkM;As4%Q">
+                                                                  <field name="TEXT">block</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ID">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT"/>
+                                                                </shadow>
+                                                                <block type="text" id="+;Zi($l:C0COl+i7{|hu">
+                                                                  <field name="TEXT">ground_palette</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="variables_set" id="-WyC9.H:S1UdEZE9zr/6">
+                                                                  <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="logic_boolean" id="^W}*C:CNnh@IE/XJf$7j">
+                                                                      <field name="BOOL">TRUE</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </statement>
+                                                          <statement name="ELSE">
+                                                            <block type="variables_set" id="h0v9+22L.LvDX?}.h#8x">
+                                                              <field name="VAR" id="bE@luFqe#dvLT2j7:jzX">wood_icon</field>
+                                                              <value name="VALUE">
+                                                                <block type="logic_boolean" id="=1?cQRUuWxGH3,mhYwfI">
+                                                                  <field name="BOOL">FALSE</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setHTMLElemStyle" id="r3ejw/.?w6I|L@oo/TN7">
+                                                                  <field name="PROPERTY">display</field>
+                                                                  <field name="PARENT">FALSE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="_`:#YVn)HKW1GqUy1z,q">
+                                                                      <field name="TEXT">none</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text">
+                                                                      <field name="TEXT"/>
+                                                                    </shadow>
+                                                                    <block type="text" id="m,fWI_*x^uAg~WjRP9k/">
+                                                                      <field name="TEXT">ground_palette</field>
+                                                                    </block>
+                                                                  </value>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </statement>
+                                                        </block>
+                                                      </statement>
+                                                      <next>
+                                                        <block type="addHTMLElement" id="jx586Z1Pu}oPKY7]I0=Q">
+                                                          <field name="ELEMENT">div</field>
+                                                          <field name="MODE">TO</field>
+                                                          <field name="PARENT">FALSE</field>
+                                                          <value name="ID">
+                                                            <shadow type="text">
+                                                              <field name="TEXT"/>
+                                                            </shadow>
+                                                            <block type="text" id=".CiuCi[Gt}o2NW~tXx-8">
+                                                              <field name="TEXT">ground_mat_1</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="TARGET_ID">
+                                                            <shadow type="DOMObjectSelector">
+                                                              <field name="DOM_OBJECT">CONTAINER</field>
+                                                            </shadow>
+                                                            <block type="text" id="V{wd~86}v(_|w@V`:ozu">
+                                                              <field name="TEXT">ground_palette</field>
+                                                            </block>
+                                                          </value>
+                                                          <next>
+                                                            <block type="setHTMLElemAttribute" id="c8zuRNy~~1%*)%X!YLJl">
+                                                              <field name="ATTRIBUTE">className</field>
+                                                              <field name="PARENT">FALSE</field>
+                                                              <value name="VALUE">
+                                                                <block type="text" id="{BZTt:G}{eP-|QntQGx,">
+                                                                  <field name="TEXT">colors</field>
+                                                                </block>
+                                                              </value>
+                                                              <value name="ID">
+                                                                <shadow type="text">
+                                                                  <field name="TEXT"/>
+                                                                </shadow>
+                                                                <block type="text" id="{.|,^!+w9JdbZjVt+?D:">
+                                                                  <field name="TEXT">ground_mat_1</field>
+                                                                </block>
+                                                              </value>
+                                                              <next>
+                                                                <block type="setHTMLElemStyle" id=".ts!Ja,~W~mIWtj}s8sK">
+                                                                  <field name="PROPERTY">backgroundImage</field>
+                                                                  <field name="PARENT">FALSE</field>
+                                                                  <value name="VALUE">
+                                                                    <block type="text" id="rW:{,.fID$eM1LL-ic:4">
+                                                                      <field name="TEXT">url('floor.6.jpg')</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <value name="ID">
+                                                                    <shadow type="text">
+                                                                      <field name="TEXT"/>
+                                                                    </shadow>
+                                                                    <block type="text" id="kM1`KIBuMA_Cin[1-E~S">
+                                                                      <field name="TEXT">ground_mat_1</field>
+                                                                    </block>
+                                                                  </value>
+                                                                  <next>
+                                                                    <block type="addHTMLElement" id="vPpEW}cI(Y@EBjbe[Zh@">
+                                                                      <field name="ELEMENT">div</field>
+                                                                      <field name="MODE">TO</field>
+                                                                      <field name="PARENT">FALSE</field>
+                                                                      <value name="ID">
+                                                                        <shadow type="text">
+                                                                          <field name="TEXT"/>
+                                                                        </shadow>
+                                                                        <block type="text" id="Wb+TZmzm;=,wfcA2lr[j">
+                                                                          <field name="TEXT">ground_mat_2</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <value name="TARGET_ID">
+                                                                        <shadow type="DOMObjectSelector">
+                                                                          <field name="DOM_OBJECT">CONTAINER</field>
+                                                                        </shadow>
+                                                                        <block type="text" id="]A8~A9[2,z5QYQs@AuB@">
+                                                                          <field name="TEXT">ground_palette</field>
+                                                                        </block>
+                                                                      </value>
+                                                                      <next>
+                                                                        <block type="setHTMLElemAttribute" id="b_}ri73/Q/eZsurg4W($">
+                                                                          <field name="ATTRIBUTE">className</field>
+                                                                          <field name="PARENT">FALSE</field>
+                                                                          <value name="VALUE">
+                                                                            <block type="text" id="VgigKkUJ$slQkG^}^A7-">
+                                                                              <field name="TEXT">colors</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <value name="ID">
+                                                                            <shadow type="text">
+                                                                              <field name="TEXT"/>
+                                                                            </shadow>
+                                                                            <block type="text" id="jbxZR/:`hDb??pyj!GNW">
+                                                                              <field name="TEXT">ground_mat_2</field>
+                                                                            </block>
+                                                                          </value>
+                                                                          <next>
+                                                                            <block type="setHTMLElemStyle" id="s$T+|pWhLqz^x^/pUMAb">
+                                                                              <field name="PROPERTY">backgroundImage</field>
+                                                                              <field name="PARENT">FALSE</field>
+                                                                              <value name="VALUE">
+                                                                                <block type="text" id=",I0OO0q^wqAn[YhsMv=u">
+                                                                                  <field name="TEXT">url('4.2.jpg')</field>
+                                                                                </block>
+                                                                              </value>
+                                                                              <value name="ID">
+                                                                                <shadow type="text">
+                                                                                  <field name="TEXT"/>
+                                                                                </shadow>
+                                                                                <block type="text" id="*:{kbKYNm#yc!w8d@^%,">
+                                                                                  <field name="TEXT">ground_mat_2</field>
+                                                                                </block>
+                                                                              </value>
+                                                                              <next>
+                                                                                <block type="addHTMLElement" id="K:Q9L6uWcpFSlOHCVj{J">
+                                                                                  <field name="ELEMENT">div</field>
+                                                                                  <field name="MODE">TO</field>
+                                                                                  <field name="PARENT">FALSE</field>
+                                                                                  <value name="ID">
+                                                                                    <shadow type="text">
+                                                                                      <field name="TEXT"/>
+                                                                                    </shadow>
+                                                                                    <block type="text" id="e-=[#3XM(QfXQwFxZ%gt">
+                                                                                      <field name="TEXT">ground_mat_3</field>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                  <value name="TARGET_ID">
+                                                                                    <shadow type="DOMObjectSelector">
+                                                                                      <field name="DOM_OBJECT">CONTAINER</field>
+                                                                                    </shadow>
+                                                                                    <block type="text" id="+wN^f6nDn^1Yv+;^P5`T">
+                                                                                      <field name="TEXT">ground_palette</field>
+                                                                                    </block>
+                                                                                  </value>
+                                                                                  <next>
+                                                                                    <block type="setHTMLElemAttribute" id="6N,fhcX3Air@`0s^}2|j">
+                                                                                      <field name="ATTRIBUTE">className</field>
+                                                                                      <field name="PARENT">FALSE</field>
+                                                                                      <value name="VALUE">
+                                                                                        <block type="text" id="5$jQ/ENnsgHJ@Kir]byp">
+                                                                                          <field name="TEXT">colors</field>
+                                                                                        </block>
+                                                                                      </value>
+                                                                                      <value name="ID">
+                                                                                        <shadow type="text">
+                                                                                          <field name="TEXT"/>
+                                                                                        </shadow>
+                                                                                        <block type="text" id="iz)g+h56xAtH9v|i%J|T">
+                                                                                          <field name="TEXT">ground_mat_3</field>
+                                                                                        </block>
+                                                                                      </value>
+                                                                                      <next>
+                                                                                        <block type="setHTMLElemStyle" id="`;(Pfq:vGD,4NV}/fx_A">
+                                                                                          <field name="PROPERTY">backgroundImage</field>
+                                                                                          <field name="PARENT">FALSE</field>
+                                                                                          <value name="VALUE">
+                                                                                            <block type="text" id="Yl{#ty1i*HQ%Cl*/{)@0">
+                                                                                              <field name="TEXT">url('4.3.jpg')</field>
+                                                                                            </block>
+                                                                                          </value>
+                                                                                          <value name="ID">
+                                                                                            <shadow type="text">
+                                                                                              <field name="TEXT"/>
+                                                                                            </shadow>
+                                                                                            <block type="text" id="j|acFu;1{@-.4v;rd}Aq">
+                                                                                              <field name="TEXT">ground_mat_3</field>
+                                                                                            </block>
+                                                                                          </value>
+                                                                                        </block>
+                                                                                      </next>
+                                                                                    </block>
+                                                                                  </next>
+                                                                                </block>
+                                                                              </next>
+                                                                            </block>
+                                                                          </next>
+                                                                        </block>
+                                                                      </next>
+                                                                    </block>
+                                                                  </next>
+                                                                </block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="Cx`@r+0Y0+TSJunPx=L=" x="-2850" y="-510">
+      <field name="VAR" id="]c0,#Xb=UMN9NJqoq2B^">markers_visible</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="u6c;VUiXmU}=n]%MrU8u">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+      <next>
+        <block type="addHTMLElement" id="LzcUT=P4Je.UIIaZ7_P+">
+          <field name="ELEMENT">div</field>
+          <field name="MODE">TO</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="h#Ku@*{.+m-oNiKoO=Rp">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="text" id="qUX0,B?/Y9hba[]!{ZKr">
+              <field name="TEXT">markers_hide_show</field>
+            </block>
+          </value>
+          <value name="TARGET_ID">
+            <shadow type="DOMObjectSelector" id="ucc?Z=]~@Q3P:r7XmF`1">
+              <field name="DOM_OBJECT">CONTAINER</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setHTMLElemAttribute" id="wll_AlS(t/3$KCF7,YR_">
+              <field name="ATTRIBUTE">className</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="zn@JU*_jgzF?,Ptahb`n">
+                  <field name="TEXT">markers_hide_show</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="J-;Sktlh}RCFIoTM|n9Z">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="*]c:Dcu|q];Faz3C3=~x">
+                  <field name="TEXT">markers_hide_show</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="#6]c6g5^H{=~#P-u9]u2">
+                  <field name="PROPERTY">backgroundImage</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="37+z7dAH+BI$.W5TfU|Z">
+                      <field name="TEXT">url(icons/markers_visible.svg)</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id=".r4l/~]vf!QDy2(KK,;6">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="]8v,ag.M^/XoSmo$*`XB">
+                      <field name="TEXT">markers_hide_show</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="(Ue{Xtb:!NN7WEcBmR13" x="-2850" y="-310">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="1O=jlTH+:9N|h{+JZcuD">
+          <field name="TEXT">markers_hide_show</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="3jja2E9pMKy-GGe]#4ql">
+          <value name="IF0">
+            <block type="logic_compare" id="%xEx|XHoVltwsrjS^|e^">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="pqs)2i92dMg}eJ1ktPke">
+                  <field name="VAR" id="]c0,#Xb=UMN9NJqoq2B^">markers_visible</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="R/TH$6Yis,t,aTd@1k(n">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setCSSRuleStyle" id="YpZ;=n+9@j;Sy}4#+GOy">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">visibility</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="uhw{9tZOlAZ=J$5L;Qqe">
+                  <field name="TEXT">hidden</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="JE$nU5~b=rdE7*Dn5CjQ">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="9CaIt7B4}*gjlJEqz!BB">
+                  <field name="TEXT">.interraction_icon</field>
+                </block>
+              </value>
+              <next>
+                <block type="setCSSRuleStyle" id="a43dMcV}=y!CFUHoKNOe">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+                  <field name="PROPERTY">visibility</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="pg%+KohP^h+@Jn%lT1Je">
+                      <field name="TEXT">hidden</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="bZS[o]zVi)?._}q9HRt@">
+                      <field name="TEXT">.painting_palette</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="?|]w.$+ah#82P-qLg$!d">
+                      <field name="VAR" id="]c0,#Xb=UMN9NJqoq2B^">markers_visible</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="F/y?YSw3YbgeI~c!Q]H,">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="WtU2s)o3{hOM%NZpKTV@">
+                          <field name="PROPERTY">backgroundImage</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="thds_V0Kb|ospqXD#Gl+">
+                              <field name="TEXT">url(icons/markers_hidden.svg)</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="text" id="iv5%=m,,Xu[V_*uiW9]|">
+                              <field name="TEXT">markers_hide_show</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="setCSSRuleStyle" id="nt%5A2BSen(FJHQ_er0u">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+              <field name="PROPERTY">visibility</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="?gxS}H$(W8IVWviK7`Ru">
+                  <field name="TEXT">visible</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT"/>
+                </shadow>
+                <block type="text" id="#MC+}*ee4#ng*@O$E8~z">
+                  <field name="TEXT">.interraction_icon</field>
+                </block>
+              </value>
+              <next>
+                <block type="setCSSRuleStyle" id="KuRraS6YnhWu7@e!ww=e">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" mediaruleslot="false"></mutation>
+                  <field name="PROPERTY">visibility</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="S+A3+TmNL~{~8Whzwt;j">
+                      <field name="TEXT">visible</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="text" id="{q`aRN(U.BD48~Y2KYM1">
+                      <field name="TEXT">.painting_palette</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id=":^#.Zno_!e]=ps:G$h(K">
+                      <field name="VAR" id="]c0,#Xb=UMN9NJqoq2B^">markers_visible</field>
+                      <value name="VALUE">
+                        <block type="logic_boolean" id="g3n+H0@k)S+o;2$}N,P$">
+                          <field name="BOOL">TRUE</field>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="8l5N*~Fdf/OADXSdKRq]">
+                          <field name="PROPERTY">backgroundImage</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="?M+`:Z2q;X..l:|:8HzP">
+                              <field name="TEXT">url(icons/markers_visible.svg)</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text">
+                              <field name="TEXT"/>
+                            </shadow>
+                            <block type="text" id="9Y*be0XI(#mCHn6Xu}rX">
+                              <field name="TEXT">markers_hide_show</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setMaterialColor" id="yYYfa.8iW!{I$:@2YUiw" x="-2870" y="130">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
+      <field name="MAT_COL_NAME">RGB</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="@(;=${6a{^{YXEGKf*H$">
+          <field name="FIELDNAME">colorlight</field>
+        </shadow>
+      </value>
+      <value name="R">
+        <shadow type="math_number" id="}s~EwLnd|.B(m17M9XC4">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="G">
+        <shadow type="math_number" id="Fkp8EZ8I40Pqfk7.iQF|">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="math_number" id="hdcA}LfdeuAB1zyUen=%">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="6*)yPO|J|geUa9jN0.;x" x="-1030" y="230">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="Y7Cb2zi20uTc[NN?VPy*">
+          <field name="TEXT"/>
+        </shadow>
+        <block type="lists_create_with" id="lXWEz?9^:h/{EXqCa9R#">
+          <mutation items="3"/>
+          <value name="ADD0">
+            <block type="text" id="{E4uFIzeNXnS==.|wwT*">
+              <field name="TEXT">wood_mat_1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="text" id="/!:Ai9=H|5=uZciqJRm-">
+              <field name="TEXT">wood_mat_2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="text" id="T-sm)_BKU8n3L-jO4gEK">
+              <field name="TEXT">wood_mat_3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="replaceTexture" id="XA+k0f(mQ#/AoW2=W`{R">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+          <field name="OLD_TEX_NAME">wood_basecolor_1.jpg</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="8DVt~.HsztSZ|(VHCZDZ">
+              <field name="FIELDNAME">wood_1</field>
+            </shadow>
+          </value>
+          <value name="NEW_TEX_URL">
+            <shadow type="text" id="^lRV/j14]HjaT`{R?KyX">
+              <field name="TEXT">./newTexture.png</field>
+            </shadow>
+            <block type="text_getSubstring" id="362MW2g*+lxmxB%y3:X[">
+              <mutation at1="true" at2="true"/>
+              <field name="WHERE1">FROM_START</field>
+              <field name="WHERE2">FROM_END</field>
+              <value name="STRING">
+                <block type="getHTMLElemStyle" id="s2ZI#{)gav3q;Og=3+wf">
+                  <field name="PROPERTY">backgroundImage</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="d-C7R9Ypz=BdMArw-Mqk">
+                      <field name="TEXT"/>
+                    </shadow>
+                    <block type="getEventProperty" id="kwF]I3C;rM`dXp:RsC[f">
+                      <field name="PROPERTY">target.id</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="AT1">
+                <block type="math_number" id="j6s+`/01*NOCxll}gu~{">
+                  <field name="NUM">5</field>
+                </block>
+              </value>
+              <value name="AT2">
+                <block type="math_number" id="sI=`$B0,5O-N9KxwPsX8">
+                  <field name="NUM">2</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="*IC,rV,d,{LD2gS04]_I">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text">
+              <field name="TEXT"/>
+            </shadow>
+            <block type="lists_create_with" id="`%5KJ8tg=NqU^{alG}67">
+              <mutation items="3"/>
+              <value name="ADD0">
+                <block type="text" id="rd!*eZZc%=ZA}rXds814">
+                  <field name="TEXT">ground_mat_1</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="y9O^{{ukkwXMrW=nZoF^">
+                  <field name="TEXT">ground_mat_2</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="text" id="aEL;0;-iye+1kNy5c^%$">
+                  <field name="TEXT">ground_mat_3</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id=";AkKN|oq#uofV_cL?Wo.">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">floor.6.jpg</field>
+              <value name="MATERIAL">
+                <shadow type="materialList" id="Ce8w8G=(P;`?TE[)8y60">
+                  <field name="FIELDNAME">ground</field>
+                </shadow>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text">
+                  <field name="TEXT">./newTexture.png</field>
+                </shadow>
+                <block type="text_getSubstring" id="^mynel*SLf;9+vk(/pbr">
+                  <mutation at1="true" at2="true"/>
+                  <field name="WHERE1">FROM_START</field>
+                  <field name="WHERE2">FROM_END</field>
+                  <value name="STRING">
+                    <block type="getHTMLElemStyle" id="?OQb:$h}{ACDGMx^CWe8">
+                      <field name="PROPERTY">backgroundImage</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text">
+                          <field name="TEXT"/>
+                        </shadow>
+                        <block type="getEventProperty" id="lcFgsfiTR|?,F20KK`d%">
+                          <field name="PROPERTY">target.id</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="AT1">
+                    <block type="math_number" id=";fi[a`JJHLC7NQFJm!nl">
+                      <field name="NUM">5</field>
+                    </block>
+                  </value>
+                  <value name="AT2">
+                    <block type="math_number" id="B6^8Ep2c5tX+xFHJ(GTK">
+                      <field name="NUM">2</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1277" viewport-y="28" viewport-w="625" viewport-h="728" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

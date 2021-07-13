@@ -215,7 +215,7 @@ function runCode(app) {
             assignMatEx(obj[i],'Steel')
         }
     }
-
+    // TODO: 依照客户需求再进行修改
     // 改变金属材质
     // json = {1,}
     window.setMentalMaterial = function (type=1){
@@ -231,54 +231,6 @@ function runCode(app) {
                 break;
         }
     }
-    //
-    // // 改变金属材质
-    // // json = {1,}
-    // window.setMentalMaterial(type=1){
-    //     switch (type){
-    //         case 1:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental1.jpg',function (){ })
-    //             break;
-    //         case 2:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental2.jpg',function (){ })
-    //             break;
-    //         case 3:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental3.jpg',function (){ })
-    //             break;
-    //     }
-    // }
-    //
-    // // 改变金属材质
-    // // json = {1,}
-    // window.setMentalMaterial(type=1){
-    //     switch (type){
-    //         case 1:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental1.jpg',function (){ })
-    //             break;
-    //         case 2:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental2.jpg',function (){ })
-    //             break;
-    //         case 3:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental3.jpg',function (){ })
-    //             break;
-    //     }
-    // }
-    //
-    // // 改变金属材质
-    // // json = {1,}
-    // window.setMentalMaterial(type=1){
-    //     switch (type){
-    //         case 1:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental1.jpg',function (){ })
-    //             break;
-    //         case 2:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental2.jpg',function (){ })
-    //             break;
-    //         case 3:
-    //             replaceTextureEx('aluminium','mental1.jpg','mental3.jpg',function (){ })
-    //             break;
-    //     }
-    // }
 }
 
 });
