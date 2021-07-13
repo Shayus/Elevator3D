@@ -8,7 +8,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="MainTab" active="true" scrollx="2943.087402343752" scrolly="56.74000167846657" scale="1">
+  <tab name="main" type="MainTab" active="true" scrollx="3095.447021484375" scrolly="-287.7663269042969" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="bE@luFqe#dvLT2j7:jzX" type="">wood_icon</variable>
       <variable id="q`GZkkkusMs6b9I-T1Vp" type="">ground_icon</variable>
@@ -1526,24 +1526,106 @@
         </shadow>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="loadScene" id="pW.XD%K@JO4Hq0:NNI_M" x="-2850" y="550">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" enablealias="false"></mutation>
-      <value name="URL">
-        <shadow type="text" id="_O^UD`^;b[!l5{I)!C#?">
-          <field name="TEXT">path/to/scene.gltf</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="nB1^zDa`Y-Q!A%y=T)g)" x="-3070" y="530">
+      <value name="VALUE">
+        <shadow type="text" id="U@I/xJLU9S=6JGsPNL9c">
+          <field name="TEXT">Hello, Verge!</field>
         </shadow>
-      </value>
-      <next>
-        <block type="appendScene" id="`SvVUCS*1Y]aHV,QkC!T">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
-          <value name="URL">
-            <shadow type="text" id="7={Qv(hI-@{U4^-[;[G(">
-              <field name="TEXT">path/to/scene.gltf</field>
+        <block type="getAnimationFrame" id="@;FF#e;Ihx~(`l1l/!@9">
+          <value name="VALUE">
+            <shadow type="animationList" id="tw_i)8wg5EEr^zg{mU/v">
+              <field name="FIELDNAME">Area</field>
             </shadow>
           </value>
+        </block>
+      </value>
+      <next>
+        <block type="playAnimationAdv" id="Itjc*5uKMs_/MxE+]x?l">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopOnce</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="mAgAxlPYwLVAveE/.^pA">
+              <field name="FIELDNAME">model.470</field>
+            </shadow>
+            <block type="lists_create_with" id="MiI.jt]d*}Y({ffu52Ow">
+              <mutation items="8"/>
+              <value name="ADD0">
+                <block type="objectList" id="1/N55Y;qjKu~M-,]KLv`">
+                  <field name="FIELDNAME">Area</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="objectList" id="S;S(n*+,/UvTGQh/#`d#">
+                  <field name="FIELDNAME">model.001</field>
+                </block>
+              </value>
+              <value name="ADD2">
+                <block type="objectList" id="[C(LVDOa6GA4nJ4#IFJw">
+                  <field name="FIELDNAME">model.074</field>
+                </block>
+              </value>
+              <value name="ADD3">
+                <block type="objectList" id="KZ$C.,jpUG](T^`BGW]^">
+                  <field name="FIELDNAME">model.089</field>
+                </block>
+              </value>
+              <value name="ADD4">
+                <block type="objectList" id="_GOMn=eB{9IA5t$,nPwt">
+                  <field name="FIELDNAME">model.470</field>
+                </block>
+              </value>
+              <value name="ADD5">
+                <block type="objectList" id="?05qTJKlld!0EHIKboP1">
+                  <field name="FIELDNAME">model.471</field>
+                </block>
+              </value>
+              <value name="ADD6">
+                <block type="objectList" id="]$Y0)[B:|y@.,#vBO4@#">
+                  <field name="FIELDNAME">model.479</field>
+                </block>
+              </value>
+              <value name="ADD7">
+                <block type="objectList" id="^/Dhky(m7MYkGg).0WE_">
+                  <field name="FIELDNAME">立方体.001</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="FROM">
+            <block type="math_number" id="0w;=sI?mD7@-hM;0cIn0">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="TO">
+            <block type="math_number" id="~@D[vOGmv?oL@|WK{O7Q">
+              <field name="NUM">30</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <block type="math_number" id="4ERv/=(%a-0zJz`@??}`">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <next>
+            <block type="console.log" id="^22?~$Q(V^2yJ/5sqqS3">
+              <value name="VALUE">
+                <shadow type="text">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+                <block type="getAnimationFrame" id="@p%OkSixLiMME]{)4^m@">
+                  <value name="VALUE">
+                    <shadow type="animationList" id="(nWtUL+{SH0bQ$`=zq8X">
+                      <field name="FIELDNAME">Area</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
         </block>
       </next>
     </block>
   </tab>
-  <editorsettings viewport-x="1277" viewport-y="28" viewport-w="625" viewport-h="728" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="900" viewport-y="56" viewport-w="625" viewport-h="736" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

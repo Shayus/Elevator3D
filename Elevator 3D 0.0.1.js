@@ -208,27 +208,41 @@ function prepareExternalInterface(app) {
 }
 
 function runCode(app) {
-    // add your code here, e.g. console.log('Hello, World!');
-    window.test = function (){
-        let obj  = getObjectNamesByGroupNameEx('mental')
-        for(let i in obj){
-            assignMatEx(obj[i],'Steel')
-        }
+
+    // INFO: 替换楼梯材质         输入格式： {'wood': url}
+    window.replaceWoodMaterial = function (json){
+        replaceTextureEx('wood_1', '',json.wood, function() {});
     }
-    // TODO: 依照客户需求再进行修改
-    // 改变金属材质
-    // json = {1,}
-    window.setMentalMaterial = function (type=1){
-        switch (type){
-            case 1:
-                replaceTextureEx('aluminium','mental1.jpg','mental1.jpg',function (){ })
-                break;
-            case 2:
-                replaceTextureEx('aluminium','mental1.jpg','mental2.jpg',function (){ })
-                break;
-            case 3:
-                replaceTextureEx('aluminium','mental1.jpg','mental3.jpg',function (){ })
-                break;
+
+    // INFO:替换轿厢内部地板材质           输入格式： {'floor': url}
+    window.replaceFloodMaterial = function (json){
+        replaceTextureEx('wood_1', '',json.floor, function() {});
+    }
+
+    // INFO: 替换轿厢内部灯带颜色             输入格式：{'color_in':{'r':r,'g':g,'b':b}}
+    window.changeInColor = function (json){
+        setMaterialColorEx('colorlight','RGB', json.color_in.r, json.color_in.g, json.color_in.b)
+    }
+
+    // INFO: 替换轿壁内部灯带颜色             输入格式：{'color_out':{'r':r,'g':g,'b':b}}
+    window.changeOutColor = function (json){
+        setMaterialColorEx('colorlight_h','RGB', json.color_out.r, json.color_out.g, json.color_out.b)
+    }
+
+    // INFO: 替换轿厢内部背景板             输入格式：{'img': url}
+    window.changeOutColor = function (json){
+        replaceTextureEx('up','',json.img,function() {});
+        replaceTextureEx('mid','',json.img,function() {});
+        replaceTextureEx('down','',json.img,function() {});
+    }
+
+    window.play = function (){
+        if(getAnimationFrameEx('Area') === 0) {
+            operateAnimationEx('PLAY', ['Area', 'model.001', 'model.074', 'model.089', 'model.470', 'model.471', 'model.479', '立方体.001'], 0, 30, 'LoopOnce', 1, function () {
+            }, undefined, false);
+        }else{
+            operateAnimationEx('PLAY', ['Area', 'model.001', 'model.074', 'model.089', 'model.470', 'model.471', 'model.479', '立方体.001'], 0, 30, 'LoopOnce', 1, function () {
+            }, undefined, true);
         }
     }
 }
