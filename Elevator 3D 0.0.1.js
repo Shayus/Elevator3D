@@ -230,12 +230,14 @@ function runCode(app) {
     }
 
     // INFO: 替换轿厢内部背景板             输入格式：{'img': url}
-    window.changeOutColor = function (json){
+    window.changeBackDec = function (json){
         replaceTextureEx('up','',json.img,function() {});
         replaceTextureEx('mid','',json.img,function() {});
         replaceTextureEx('down','',json.img,function() {});
     }
 
+    // INFO: 动画控制           不需要输入，系统会自动判断电梯位置
+    // FIXME： 目前仅支持两层楼，用的是自带的动画，后期考虑修改为移动object位置来实现动画
     window.play = function (){
         if(getAnimationFrameEx('Area') === 0) {
             operateAnimationEx('PLAY', ['Area', 'model.001', 'model.074', 'model.089', 'model.470', 'model.471', 'model.479', '立方体.001'], 0, 30, 'LoopOnce', 1, function () {
@@ -245,6 +247,23 @@ function runCode(app) {
             }, undefined, true);
         }
     }
+
+    // INFO: 用于切换场景，目前支持 1. 单电梯 2. 电梯+楼梯 3. 外装电梯样式              输入： {‘style': n}
+    window.setStyle = function (json) {
+        changeVisEx(['GROUP', 'door'], false);
+        changeVisEx(['GROUP', 'stair'], false);
+        changeVisEx(['GROUP', 'walkway'], false);
+        switch (json.style){
+            case 1:
+                break;
+            case 2:
+                changeVisEx(['GROUP', 'stair'], true);
+                break;
+            case 3:
+                changeVisEx(['GROUP', 'walkway'], true);
+        }
+    }
+    setStyle({'style':2});
 }
 
 });
